@@ -1,5 +1,4 @@
-﻿#include "cppScratch/test.hpp"
-#include "library/lib.hpp"
+﻿#include "library/lib.hpp"
 
 using namespace std;
 
