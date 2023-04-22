@@ -15,4 +15,4 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(Boost)
 
-target_link_libraries(cppScratch PRIVATE nlohmann_json::nlohmann_json Boost::program_options dal library)
+target_link_libraries(cppScratch PRIVATE nlohmann_json::nlohmann_json Boost::program_options Boost::log Boost::date_time Boost::filesystem Boost::system Boost::thread Boost::log_setup Boost::chrono Boost::atomic dal library)
