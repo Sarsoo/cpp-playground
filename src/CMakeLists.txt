@@ -8,4 +8,11 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(json)
 
-target_link_libraries(cppScratch PRIVATE nlohmann_json::nlohmann_json dal library)
+FetchContent_Declare(
+  Boost
+  GIT_REPOSITORY https://github.com/boostorg/boost.git
+  GIT_TAG boost-1.82.0
+)
+FetchContent_MakeAvailable(Boost)
+
+target_link_libraries(cppScratch PRIVATE nlohmann_json::nlohmann_json Boost::program_options dal library)
